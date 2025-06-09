@@ -46,8 +46,11 @@ df['PSI'] = df['PSI'].rolling(window=5, center=True).median()
 # Outlier handling: physical limit constraint
 df.loc[df['PSI'] > 30, 'PSI'] = np.nan
 ])
+```
 
 2. Deep-Learning Model Architecture
+```python
+# Building the model
 model = Sequential([
     LSTM(64, return_sequences=True, input_shape=(30, 1)),
     BatchNormalization(),
@@ -63,24 +66,18 @@ Forecasting water pressure trends can improve compliance and reduce costs for ut
 
 🔍 Early Detection of Low-Pressure Events
 70–85% of sub-7 PSI events could be predicted 30–90 minutes in advance
-
 This early warning enables faster response and incident prevention
 
 ⏱️ Shorter Violation Durations
 Forecasting is estimated to reduce the length of low-pressure violations by 40–60%
-
 Based on observed response times during the Pasig pilot
 
 📊 Automated Pressure Logging
 Automatically generates:
-
-Time-stamped pressure records
-
-Root-cause analysis reports
-
-Predictive alerts for upcoming pressure violations
-
-Helps utilities stay audit-ready and improves traceability
+- Time-stamped pressure records
+- Root-cause analysis reports
+- Predictive alerts for upcoming pressure violations
+- Helps utilities stay audit-ready and improves traceability
 
 💸 Avoided Penalties (Theoretical Estimate)
 Potential savings: ₱420,000 to ₱780,000 per district per year
