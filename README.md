@@ -19,7 +19,7 @@ graph TD
     C --> D[LSTM Model]
     D --> E[30-Step Forecasts]
     E --> F[Maintenance Alerts]
-----
+
 Key Features
 🚀 30-minute ahead forecasts with 95%+ accuracy
 🛡️ Robust to sensor noise through advanced data cleaning
