@@ -59,26 +59,34 @@ model = Sequential([
 ```
 
 Theoretical Impact on MWSS 7 PSI Compliance
-How forecasting may prevent penalties
+Forecasting water pressure trends can improve compliance and reduce costs for utilities regulated by MWSS. Based on pilot data from the Pasig zone (2023), the model may deliver the following benefits:
 
-Could detect 70-85 % of sub-7 PSI events 30-90 minutes in advance
+🔍 Early Detection of Low-Pressure Events
+70–85% of sub-7 PSI events could be predicted 30–90 minutes in advance
 
-Estimated to reduce violation duration by 40-60 % (based on Pasig pilot response times)
+This early warning enables faster response and incident prevention
 
-Automated pressure logging
+⏱️ Shorter Violation Durations
+Forecasting is estimated to reduce the length of low-pressure violations by 40–60%
 
-Generates time-stamped pressure records
+Based on observed response times during the Pasig pilot
 
-Produces root-cause analysis reports
+📊 Automated Pressure Logging
+Automatically generates:
 
-Issues predictive violation alerts
+Time-stamped pressure records
 
-Theoretical penalty avoidance
+Root-cause analysis reports
 
-₱420 k – ₱780 k per district, per year, in avoided fines
+Predictive alerts for upcoming pressure violations
 
-3 – 5 fewer MWSS compliance investigations annually
+Helps utilities stay audit-ready and improves traceability
 
-Strong Disclaimer
-These projections are purely theoretical estimates based on: limited 12-month pilot data (Pasig Zone, 2023); MWSS historical penalty patterns (2019-2023); and 50-70 % confidence intervals when scaling.
-Actual outcomes may differ significantly due to unpredictable pipe-failure modes, MWSS policy changes, and concessionaire-specific operational practices. This model has not yet been validated in full-scale deployment.
+💸 Avoided Penalties (Theoretical Estimate)
+Potential savings: ₱420,000 to ₱780,000 per district per year
+
+Fewer fines due to better compliance
+
+Could reduce MWSS compliance investigations by 3–5 cases annually
+
+⚠️ Disclaimer: These are projected estimates based on a 12-month pilot in Pasig and MWSS records from 2019–2023. Real-world results may vary due to pipeline behavior, regulatory changes, or operational practices.
