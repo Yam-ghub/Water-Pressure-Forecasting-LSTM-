@@ -15,7 +15,7 @@ This deep learning solution forecasts PSI (pounds per square inch) levels in wat
 ```mermaid
 graph TD
     A[Raw Sensor Data] --> B[Data Cleaning]
-    B --> C[Feature Engineering]
+    B --> C[Data Transformation]
     C --> D[LSTM Model]
     D --> E[30-Step Forecasts]
     E --> F[Maintenance Alerts]
