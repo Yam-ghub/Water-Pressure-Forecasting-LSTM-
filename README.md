@@ -3,7 +3,7 @@
 ## Industrial Predictive-Maintenance Solution
 
 <img src="output.png" alt="Pressure Forecasting Visualization" width="800"/>
-
+<img src="TestingtoSampleData.png" alt="Pressure Forecasting Visualization" width="800"/>
 ---
 
 ## Business Problem Solved
