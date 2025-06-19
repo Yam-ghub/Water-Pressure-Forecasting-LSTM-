@@ -38,7 +38,8 @@ graph TD
 
 ## Technical Implementation
 
-### 1. Data Pipeline
+### Data Pipeline
+1. Data Cleaning and Transformation
 ```python
 # Raw-data cleaning & Transformation
 import numpy as np
@@ -97,7 +98,7 @@ train_size = int(len(X) * 0.7)
 X_train, X_test = X[:train_size], X[train_size:]
 y_train, y_test = y[:train_size], y[train_size:]
 ```
-3. Deep-Learning Model Architecture
+### 3. Deep-Learning Model Architecture
 ```python
 # Building the model
 model = Sequential([
