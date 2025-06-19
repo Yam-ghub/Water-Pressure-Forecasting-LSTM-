@@ -2,8 +2,11 @@
 
 ## Industrial Predictive-Maintenance Solution
 
+Prediction with training data.
 <img src="output.png" alt="Pressure Forecasting Visualization" width="800"/>
-<img src="TestingtoSampleData.png" alt="Pressure Forecasting Visualization" width="800"/>
+
+Prediction with sample data.
+<img src="TestingtoSampleData.png" alt="Pressure Forecasting Visualization" width="600"/>
 ---
 
 ## Business Problem Solved
