@@ -1,13 +1,5 @@
 # Fault Forecasting Digital Twin for Preventive Maintenance of Water Pipeline Pressure Data Loggers using Deep Learning
 
-
-### Prediction with training data.
-<img src="output.png" alt="Pressure Forecasting Visualization" width="800"/>
-
-### Prediction with sample data.
-<img src="TestingtoSampleData.png" alt="Pressure Forecasting Visualization" width="600"/>
----
-
 ## Business Problem Solved
 This deep-learning solution forecasts PSI (pounds per square inch) levels in water-distribution systems for our client’s concessionaire data loggers. By predicting pressure trends **30 steps ahead**, water utilities can:
 
@@ -110,6 +102,13 @@ model = Sequential([
     Dense(1)
 ])
 ```
+## Testing
+### Prediction with training data.
+<img src="output.png" alt="Pressure Forecasting Visualization" width="800"/>
+
+### Prediction with sample data.
+<img src="TestingtoSampleData.png" alt="Pressure Forecasting Visualization" width="600"/>
+---
 
 Theoretical Impact on MWSS 7 PSI Compliance
 Forecasting water pressure trends can improve compliance and reduce costs for utilities regulated by MWSS. Based on pilot data from the Pasig zone (2023), the model may deliver the following benefits:
