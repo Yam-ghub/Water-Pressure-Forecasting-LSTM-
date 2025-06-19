@@ -2,10 +2,10 @@
 
 ## Industrial Predictive-Maintenance Solution
 
-## Prediction with training data.
+### Prediction with training data.
 <img src="output.png" alt="Pressure Forecasting Visualization" width="800"/>
 
-## Prediction with sample data.
+### Prediction with sample data.
 <img src="TestingtoSampleData.png" alt="Pressure Forecasting Visualization" width="600"/>
 ---
 
