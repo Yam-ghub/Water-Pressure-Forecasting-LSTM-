@@ -2,7 +2,7 @@
 
 ## Industrial Predictive-Maintenance Solution
 
-<img src="output.png" alt="Pressure Forecasting Visualization" width="400"/>
+<img src="output.png" alt="Pressure Forecasting Visualization" width="800"/>
 
 ---
 
