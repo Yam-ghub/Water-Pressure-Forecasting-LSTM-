@@ -106,10 +106,12 @@ model = Sequential([
 ### Prediction with training data.
 Metrics: RMSE & MAPE
 ```python
+#RMSE (Root Mean Squared Error)
 rmse = np.sqrt(mean_squared_error(y_test, y_pred))
 print("RMSE:", rmse)
 ```
 ```python
+# MAPE (Mean Absolute Percentage Error)
 def mean_absolute_percentage_error(y_true, y_pred):
     y_true, y_pred = np.array(y_true), np.array(y_pred)
     mask = y_true != 0  # Avoid division by zero
