@@ -75,8 +75,29 @@ scaler = MinMaxScaler()
 # Example usage:
 # df_new['PSI_scaled'] = scaler.fit_transform(df_new[['PSI']])
 ```
+2. Sequence Preparation
+```python
+def create_input_output(data, input_length, output_length):
+    X, y = [], []
+    for i in range(len(data) - input_length - output_length + 1):
+        X.append(data[i:i + input_length])
+        y.append(data[i + input_length:i + input_length + output_length])
+    return np.array(X), np.array(y)
 
-2. Deep-Learning Model Architecture
+# Parameters
+INPUT_LENGTH = 30
+OUTPUT_LENGTH = 1
+
+# Sequence generation
+X, y = create_input_output(scaled_data, INPUT_LENGTH, OUTPUT_LENGTH)
+X = X.reshape(X.shape[0], X.shape[1], 1)
+
+# Train-test split
+train_size = int(len(X) * 0.7)
+X_train, X_test = X[:train_size], X[train_size:]
+y_train, y_test = y[:train_size], y[train_size:]
+```
+3. Deep-Learning Model Architecture
 ```python
 # Building the model
 model = Sequential([
