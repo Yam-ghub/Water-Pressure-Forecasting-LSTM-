@@ -2,7 +2,7 @@
 
 ## Industrial Predictive-Maintenance Solution
 
-![Pressure Forecasting Visualization](https://via.placeholder.com/800x400.png?text=PSI+Forecasting+Visualization)
+![Pressure Forecasting Visualization ](output.png)
 
 ---
 
