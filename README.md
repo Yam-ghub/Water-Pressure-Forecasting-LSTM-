@@ -40,14 +40,40 @@ graph TD
 
 ### 1. Data Pipeline
 ```python
-# Raw-data cleaning
-df.replace('[-11057] Not Enough Values', np.nan, inplace=True)
-df['PSI'] = df['PSI'].interpolate(method='time')
-df['PSI'] = df['PSI'].rolling(window=5, center=True).median()
+# Raw-data cleaning & Transformation
+import numpy as np
+import pandas as pd
+from sklearn.preprocessing import MinMaxScaler
 
-# Outlier handling: physical limit constraint
-df.loc[df['PSI'] > 30, 'PSI'] = np.nan
-])
+# --- Step 1: Replace invalid/missing values ---
+df3.replace('[-11057] Not Enough Values For Calculation', np.nan, inplace=True)
+
+# --- Step 2: Convert data types ---
+df3['PSI'] = pd.to_numeric(df3['PSI'], errors='coerce')            # Convert PSI to numeric
+df3['DATETIME'] = pd.to_datetime(df3['DATETIME'], errors='coerce') # Ensure datetime format
+
+# --- Step 3: Reindex dataframe with datetime and drop old column ---
+df_new = df3.copy()  # If df_new is not yet defined
+df_new.index = df_new['DATETIME']
+df_new.drop('DATETIME', axis=1, inplace=True)
+
+# --- Step 4: Remove outliers ---
+df_new.loc[df_new['PSI'] > 30, 'PSI'] = np.nan  # Cap PSI values at 30
+
+# --- Step 5: Interpolate missing values (time-based) ---
+df_new['PSI'] = df_new['PSI'].interpolate(method='time')
+
+# --- Step 6: Apply rolling median smoothing ---
+df_new['PSI'] = df_new['PSI'].rolling(window=5, center=True, min_periods=1).median()
+
+# --- Step 7: Final NaN and negative value handling ---
+df_new.fillna(0.01, inplace=True)   # Replace remaining NaNs
+df_new[df_new < 0] = 0.01           # Replace negative values with minimum threshold
+
+# --- Step 8: Normalize the data ---
+scaler = MinMaxScaler()
+# Example usage:
+# df_new['PSI_scaled'] = scaler.fit_transform(df_new[['PSI']])
 ```
 
 2. Deep-Learning Model Architecture
