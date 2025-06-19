@@ -104,10 +104,10 @@ model = Sequential([
 ```
 ## Testing
 ### Prediction with training data.
-<img src="output.png" alt="Pressure Forecasting Visualization" width="800"/>
+<img src="output.png" alt="Pressure Forecasting Visualization" width="600"/>
 
 ### Prediction with sample data.
-<img src="TestingtoSampleData.png" alt="Pressure Forecasting Visualization" width="600"/>
+<img src="TestingtoSampleData.png" alt="Pressure Forecasting Visualization" width="500"/>
 ---
 
 Theoretical Impact on MWSS 7 PSI Compliance
