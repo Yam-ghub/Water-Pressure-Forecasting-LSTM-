@@ -1,6 +1,5 @@
-# LSTM-Based Deep Learning Model for Predicting Water-Pressure Trends
+# Fault Forecasting Digital Twin for Preventive Maintenance of Water Pipeline Pressure Data Loggers using Deep Learning
 
-## Industrial Predictive-Maintenance Solution
 
 ### Prediction with training data.
 <img src="output.png" alt="Pressure Forecasting Visualization" width="800"/>
