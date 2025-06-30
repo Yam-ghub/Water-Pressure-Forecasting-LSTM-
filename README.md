@@ -149,4 +149,9 @@ Fewer fines due to better compliance
 
 Could reduce MWSS compliance investigations by 3–5 cases annually
 
+Web Application Preview Digital Twin
+<img src="output.png" alt="Web_App.png"="600"/>
+
+Dashboard 
+<img src="output.png" alt="Pressure Forecasting Visualization" width="600"/>
 ⚠️ Disclaimer: These are projected estimates based on a 12-month pilot in Pasig and MWSS records from 2019–2023. Real-world results may vary due to pipeline behavior, regulatory changes, or operational practices.
