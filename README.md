@@ -150,7 +150,7 @@ Fewer fines due to better compliance
 
 Could reduce MWSS compliance investigations by 3–5 cases annually
 
-###🧑‍🤝‍🧑Web Application Preview Digital Twin 
+### Web Application Preview Digital Twin 
 
 <img src="Web App2.png" width="600"/>
 
