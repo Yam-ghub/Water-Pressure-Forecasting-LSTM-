@@ -120,6 +120,7 @@ def mean_absolute_percentage_error(y_true, y_pred):
 
 <img src="output.png" alt="Pressure Forecasting Visualization" width="600"/>
 
+---
 ### Prediction with sample data.
 <img src="TestingtoSampleData.png" alt="Pressure Forecasting Visualization" width="500"/>
 ---
